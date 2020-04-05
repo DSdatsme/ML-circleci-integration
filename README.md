@@ -36,9 +36,23 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
+### Make Predictions
+
+After running `app.py` inside container, now you can make predictions using the following command.
+
+```bash
+bash make_prediction.sh
+```
+
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Push Images To Docker
+
+```bash
+bash upload_docker.sh
+```
