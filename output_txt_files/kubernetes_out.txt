@@ -1,8 +1,20 @@
+############# OUTPUT FOR RUN_KUBERNETES SCRIPT #############
 ❯ bash run_kubernetes.sh
 kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
 Error from server (AlreadyExists): deployments.apps "prediction-server" already exists
 NAME                                 READY   STATUS    RESTARTS   AGE
-prediction-server-6cb88b7d84-vbfmp   1/1     Running   0          6m41s
+prediction-server-6cb88b7d84-6zb9n   1/1     Running   0          97s
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+
+
+############# OUTPUT FOR MAKE_PREDICTIONS SCRIPT #############
+❯ bash make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}

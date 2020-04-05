@@ -54,6 +54,15 @@ bash make_prediction.sh
 
 ### Push Images To Docker
 
+Before you run the upload command make sure you have username and password of DockerHub set in shell variables as below
+
+```bash
+username=<your-user-name>
+password=<password>
+```
+
+After setting up variables, you can run the following command to Upload Docker image.
+
 ```bash
 bash upload_docker.sh
 ```

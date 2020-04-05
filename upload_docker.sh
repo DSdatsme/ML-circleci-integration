@@ -12,6 +12,7 @@ dockerpath=dsdatsme/scikit-house-prediction
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker tag flask-model $dockerpath
+docker login --username $username --passowrd $passowrd
 
 # Step 3:
 # Push image to a docker repository
